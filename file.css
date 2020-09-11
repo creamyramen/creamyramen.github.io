@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;0,800;1,300;1,400;1,500&family=Roboto:wght@400;500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.resume {
+  width: 90vw;
+  background-color: #fefefe;
+  margin: 5vw auto;
+  box-shadow: 0 0 50px 10px #555;
+}
+
+.head {
+  background-image: url("../img/washington.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+.head .pic {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .pic img {
+  border-radius: 50%;
+}
+.head .name {
+  font-family: "poppins";
+  color: white;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.head .name h1 {
+  margin: 0;
+}
+.head .name h4 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) {
+  .head {
+    height: 12em;
+  }
+  .head img {
+    height: 10em;
+    width: 10em;
+  }
+  .head h1 {
+    font-size: 3em;
+  }
+  .head h4 {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .head {
+    height: 16em;
+  }
+  .head img {
+    height: 14em;
+    width: 14em;
+  }
+  .head h1 {
+    font-size: 4em;
+  }
+  .head h4 {
+    font-size: 1.5em;
+  }
+}
+.body {
+  display: flex;
+  font-family: "roboto";
+  color: #777;
+}
+.body h3 {
+  letter-spacing: 0.5em;
+  position: relative;
+  margin-bottom: 40px;
+}
+.body h3:after {
+  content: "";
+  width: 4em;
+  height: 5px;
+  background-color: #777;
+  left: 0;
+  bottom: -20px;
+  position: absolute;
+}
+.body .column1 {
+  width: 35%;
+}
+.body .column1 .list {
+  margin-bottom: 5em;
+}
+.body .column1 .list img {
+  height: 1em;
+  margin: 0 1em -0.2em 0;
+}
+.body .column2 {
+  width: 65%;
+  background-color: #eee;
+}
+.body .column2 p {
+  color: black;
+  margin-bottom: 0;
+}
+.body .column2 h6 {
+  margin: 0.5em 0;
+}
+.body .column2 ul {
+  margin-top: 0.5em;
+}
+.body .column {
+  padding: 2em;
+}
+
+/*# sourceMappingURL=file.css.map */

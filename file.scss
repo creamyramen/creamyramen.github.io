@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;0,800;1,300;1,400;1,500&family=Roboto:wght@400;500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    // background-color: #69CDED;
+}
+
+.resume {
+    width: 90vw;
+    background-color: #fefefe;
+    margin: 5vw auto;
+    box-shadow: 0 0 50px 10px #555;
+}
+
+.head {
+    background-image: url("../img/washington.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    .pic {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .name {
+        font-family: 'poppins';
+        color: white;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            margin: 0;
+        }
+        h4 {
+            margin-top: 0;
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .head {
+        height: 12em;
+        img {
+            height: 10em;
+            width: 10em;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h4 {
+            font-size: 1.25em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .head {
+        height: 16em;
+        img {
+            height: 14em;
+            width: 14em;
+        }
+        h1 {
+            font-size: 4em;
+        }
+        h4 {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.body {
+    display: flex;
+    font-family: 'roboto';
+    color: #777;
+    h3 {
+        letter-spacing: .5em;
+        position: relative;
+        margin-bottom: 40px;
+        &:after {
+            content: "";
+            width: 4em;
+            height: 5px;
+            background-color: #777;
+            left: 0;
+            bottom: -20px;
+            position: absolute;
+        }
+    }
+    .column1 {
+        width: 35%;
+        .list {
+            margin-bottom: 5em;
+        }
+        .list img {
+            height: 1em;
+            margin: 0 1em -.2em 0;
+        }
+    }
+    .column2 {
+        width: 65%;
+        background-color: #eee;
+        p {
+            color: black;
+            margin-bottom: 0;
+        }
+        h6 {
+            margin: .5em 0;
+        }
+        ul {
+            margin-top: .5em;
+        }
+    }
+    .column {
+        padding: 2em;
+    }
+}
