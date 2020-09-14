@@ -12,7 +12,7 @@ body {
 }
 
 .head {
-  background-image: url("../img/washington.jpeg");
+  background-image: url("washington.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
