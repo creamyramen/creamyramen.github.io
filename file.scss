@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;0,800;1,300;1,400;1,500&family=Roboto:wght@400;500&display=swap');
+$color1: #777;
+$iconMargin: 0 1em -.2em 0;
+$shadow: 0 0 50px 10px #555;
+$space: .5em;
+$picWidth: 35%;
+@import 'mixin';
 body {
-    margin: 0;
-    padding: 0;
-    // background-color: #69CDED;
+    @include noMargin();
 }
 
 .resume {
     width: 90vw;
     background-color: #fefefe;
     margin: 5vw auto;
-    box-shadow: 0 0 50px 10px #555;
+    box-shadow: $shadow;
 }
 
 .head {
@@ -19,7 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     .pic {
-        width: 35%;
+        width: $picWidth;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,29 +83,29 @@ body {
 .body {
     display: flex;
     font-family: 'roboto';
-    color: #777;
+    color: $color1;
     h3 {
-        letter-spacing: .5em;
+        letter-spacing: $space;
         position: relative;
         margin-bottom: 40px;
         &:after {
             content: "";
             width: 4em;
             height: 5px;
-            background-color: #777;
+            background-color: $color1;
             left: 0;
             bottom: -20px;
             position: absolute;
         }
     }
     .column1 {
-        width: 35%;
+        width: $picWidth;
         .list {
             margin-bottom: 5em;
         }
         .list img {
             height: 1em;
-            margin: 0 1em -.2em 0;
+            margin: $iconMargin;
         }
     }
     .column2 {
